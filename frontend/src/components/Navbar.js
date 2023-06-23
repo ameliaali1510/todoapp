@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
-        <div>
+        <div id='navbar'>
             <header>
                 <div>
                     <Link to='/'>
