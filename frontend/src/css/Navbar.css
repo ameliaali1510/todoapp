@@ -1,4 +1,5 @@
 #navbar {
     width: 80%;
-    background: linear-gradient(to right, #01BAEF, #20BF55)
+    background: linear-gradient(to right, #01BAEF, #20BF55);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
