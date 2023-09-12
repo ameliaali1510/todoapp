@@ -3,8 +3,9 @@ import { addTodo } from "../api/addTodo"
 const AddTodo = () => {
     const [userInput, setUserInput] = useState("")
 
-    const handler = async (e) => {
-        e.preventDefault()
+    const handler = async (event) => {
+        event.preventDefault()
+
         let response = await addTodo(userInput)
         console.log(response)
     }
