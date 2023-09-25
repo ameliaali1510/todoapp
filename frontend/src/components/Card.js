@@ -7,9 +7,9 @@ const Card = ({ todo, deleteHandler }) => {
             <h3>{todo.text}</h3>
             <button onClick={() => deleteHandler(todo)}>delete</button>
             <Link
-                to={`/${todo._id}`} 
+                to={`/${todo._id}`}
             >
-            edit
+                edit
             </Link>
         </div>
     )

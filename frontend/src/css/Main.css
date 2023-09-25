@@ -1,9 +1,53 @@
-#main {
-    background-color: yellow;
-    border: solid red 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #52BAD5;
+  background-image: url("https://previews.123rf.com/images/kochatornranapat/kochatornranapat1607/kochatornranapat160700211/60192038-office-stationary-working-concept-on-wooden-background-with-free-text-space-flat-lay.jpg");
+  background-size: 100% 100%;
+}
+
+.App {
+  background-color: rgb(255, 0, 191);
+  background-image: url("../to app.jpg");
+  background-size: 100% 100%;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 5%;
+  text-align: center;
+}
+
+#to-do-form input {
+  background-color: #363636;
+  border: 0;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#to-do-form input:placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#to-do-form input:focus {
+  outline: none;
+}
+
+#to-do-form button {
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #363636;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+#to-do-form button:focus {
+  outline: none;
 }

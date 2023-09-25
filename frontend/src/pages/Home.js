@@ -27,7 +27,7 @@ const Home = () => {
         <div>
             <>
                 {
-                    todos ? todos.map((todo) => <Card key={todo._id} deleteHandler={deleteHandler} todo={todo}/>)
+                    todos ? todos.map((todo) => <Card key={todo._id} deleteHandler={deleteHandler} todo={todo} />)
                         : <p>loading...</p>
                 }
             </>

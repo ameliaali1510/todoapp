@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { addTodo } from "../api/addTodo"
+
+
 const AddTodo = () => {
     const [userInput, setUserInput] = useState("")
 
@@ -11,15 +13,16 @@ const AddTodo = () => {
     }
 
     return (
-        <div>
+        <div className="App">
             <h1>
                 add item
             </h1>
-            <form onSubmit={handler}>
-                <input 
-                type="text"
+            <form id="to-do-form" onSubmit={handler}>
+                <input
+                    type="text"
                     value={userInput}
                     onChange={(e) => setUserInput(e.target.value)}
+
                 />
                 <button type="submit">submit</button>
             </form>
@@ -27,4 +30,4 @@ const AddTodo = () => {
     )
 }
 
-export default AddTodo
+export default AddTodo;

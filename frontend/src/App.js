@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import EditTodo from "./pages/EditTodo"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import './css/Main.css'
+
 const App = () => {
   return (
     <div id='main'>
@@ -20,7 +21,6 @@ const App = () => {
             element={<AddTodo />}
           />
           <Route
-            // dynamic :id to create custom route
             path='/:id'
             element={<EditTodo />}
           />

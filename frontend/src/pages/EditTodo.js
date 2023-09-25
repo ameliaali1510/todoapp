@@ -2,38 +2,49 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { getTodo } from "../api/getTodo"
 import { updateTodo } from "../api/updateTodo"
+
 const EditTodo = () => {
+    const { id } = useParams();
+    const [toUpdate, setToUpdate] = useState('');
+    const [userInput, setUserInput] = useState('');
 
-    const { id } = useParams()
-    const [toUpdate, setToUpdate] = useState('')
-    const [userInput, setUserInput] = useState('')
+    const submitHandler = async (event) => {
+        event.preventDefault();
 
-    const submitHandler = async () => {
         let obj = {
             _id: toUpdate._id,
             text: userInput
         }
-        let response = await updateTodo(obj)
-        console.log(response)
-        alert('edited item')
+
+        let response = await updateTodo(obj);
+        console.log(response);
+        alert('edited item');
     }
 
     useEffect(() => {
         const fetchTodo = async () => {
-            let data = await getTodo(id)
-            setToUpdate(data)
+            let data = await getTodo(id);
+            setToUpdate(data);
         }
-        fetchTodo()
-    },[])
+        fetchTodo();
+    }, [])
+
     return (
-        <div>
+        <div className="App">
             <h1>edit</h1>
             <h2>{toUpdate.text}</h2>
-            <input 
-                onChange={(e) => setUserInput(e.target.value)}
-            />
-            <button onClick={submitHandler}>submit</button>
+
+            <form id="to-do-form" onSubmit={submitHandler}>
+                <input
+                    type="text"
+                    value={userInput}
+                    onChange={(e) => setUserInput(e.target.value)}
+
+                />
+                <button type="submit">submit</button>
+            </form>
         </div>
     )
 }
-export default EditTodo
+
+export default EditTodo;
