@@ -9,15 +9,15 @@ const App = () => {
   return (
     <div id='main'>
       <BrowserRouter>
-        <h1>Todo List</h1>
+        <h1>To Do List</h1>
         <Navbar />
         <Routes>
           <Route
-            path='/'
+            path='/add-todo'
             element={<Home />}
           />
           <Route
-            path='/add-todo'
+            path='/'
             element={<AddTodo />}
           />
           <Route

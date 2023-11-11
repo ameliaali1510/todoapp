@@ -1,6 +1,19 @@
 #navbar {
-    width: 80%;
-    background: linear-gradient(to right, #01BAEF, #20BF55);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #8bd8ee, rgb(143, 245, 177));
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 6px;
+    border-radius: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-text {
+    margin-right: 5px;
+    font-size: 25px;
 }

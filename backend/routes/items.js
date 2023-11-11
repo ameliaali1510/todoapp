@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router() 
+const router = express.Router()
 const itemsController = require('../controllers/items')
 
 router.get('/items', itemsController.getTodos)
