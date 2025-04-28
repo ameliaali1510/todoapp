@@ -1,8 +1,5 @@
-React To Do App Bootcamp
+Full-Stack React To-Do App — Bootcamp Project
 
-During the 12 week bootcamp this was one the first projects completed using React. This is a fullstack To Do App, 
-allowing the user to store, edit, delete and update the list. 
+As part of my 12-week coding bootcamp, this was one of the first full-stack applications I built using React. The project is a dynamic To-Do application that allows users to create, edit, update, and delete tasks, with data persistence handled through a connected backend.
 
-# todoapp
-
-Fullstack MERN ToDo app done with react for Week 7 task
+This project helped me solidify my understanding of core React concepts, component-based architecture, state management, and CRUD operations, while also introducing me to full-stack development workflows. It was an important early step in building practical, real-world applications.
